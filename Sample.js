@@ -1,12 +1,12 @@
-var rest = require("./RestEasy b2.js") //Import the Module
+﻿var rest = require("./RestEasy b2.js") //Import the Module
 
-rest.dbSetup(       //Must be called if you want to use mysql calls
+/* vrest.dbSetup(       //Must be called if you want to use mysql calls
     "localhost",    //Host
     "node",         //User
     "node.js",      //Password
     "node"          //Optionally database
     )
-
+*/
 //Declaring a root page
 //Will be accessed on localhost:8001
 rest.page("/", function() { 
