@@ -1,4 +1,4 @@
-var rest = require("./RestEasy.js") //Import the Module
+var rest = require("./RestEasy b2.js") //Import the Module
 
 rest.dbSetup(       //Must be called if you want to use mysql calls
     "localhost",    //Host
@@ -15,7 +15,7 @@ rest.page("/", function() {
 
 //Declaring a page to return json
 //Will be accessed on localhost:8001/object
-rest.page("/object", function()Â {
+rest.page("/object", function() {
     return {text:"cool",otherText:"beans"} //Objects will be returned as a json representation
 })
 
