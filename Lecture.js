@@ -1,4 +1,4 @@
-var rest = require("./RestEasy.js")
+var rest = require("./RestEasy b2.js")
 
 rest.dbSetup(       //Must be called if you want to use mysql calls
     "localhost",    //Host
