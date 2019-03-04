@@ -1,5 +1,4 @@
 var rest = require("./RestEasy b2.js")
-
 /*
 rest.dbSetup(       //Must be called if you want to use mysql calls
     "localhost",    //Host
@@ -23,5 +22,11 @@ rest.page("/query", function() {
 rest.page("/file", function() {
     return rest.file("index.html")
 })
+
+rest.page("/fancy", function(){
+    return rest.file("index.html")
+})
+
+rest.offerFile('index.js')
 
 rest.start(8002)
