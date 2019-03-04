@@ -24,4 +24,8 @@ rest.page("/file", function() {
     return rest.file("index.html")
 })
 
+rest.page("/test", function() {
+    return rest.test("")
+})
+
 rest.start(8002)
