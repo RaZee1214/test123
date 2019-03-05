@@ -24,8 +24,8 @@ $(document).ready(function(){
     });    
 });
 
-function insertPeople(){
-    rest.query("CALL add_emp();")
+function insertPeople() {
+    $.get("/query", () => {})
 }
 
 function api(URL) {
