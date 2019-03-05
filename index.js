@@ -13,19 +13,19 @@ function takeover(){
 }
 
 $(document).ready(function(){
-    $(".button4").mouseover(function(){
+    $(".button5").mouseover(function(){
         $(this).fadeOut()    
     });    
 });
 
 $(document).ready(function(){
-    $(".button4").mouseout(function(){
+    $(".button5").mouseout(function(){
         $(this).fadeIn()    
     });    
 });
 
-function postPeople(){
-
+function insertPeople(){
+    rest.query("CALL add_emp();")
 }
 
 function api(URL) {
