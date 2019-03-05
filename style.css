@@ -110,6 +110,16 @@
   [class*="col-"] {
     width: 100%;
   }
+
+  #list {
+      width: 100%;
+  }
+
+  #list .item>div {
+      width: 100px;
+      display: inline-block;
+      margin-right: 10px;
+ }
   
   @media only screen and (min-width: 600px) {
     .col-s-1 {width: 8.33%;}

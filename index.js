@@ -32,6 +32,8 @@ function api(URL) {
 	$.get(URL, function(data) {
 		let items = JSON.parse(data)
 		let html = ''
+			html += '<div class="item"><div>' + 'First name:' + '</div><div>' + 'Last name:' + '</div></div>'
+
 		for (var i = 0; i < items.length; i++) {
 			html += '<div class="item"><div>' + items[i].first_name + '</div><div>' + items[i].last_name + '</div></div>'
 		}

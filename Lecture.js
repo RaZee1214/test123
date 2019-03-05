@@ -37,9 +37,6 @@ DELIMITER ; */
 
 rest.page("/file", function() {
     return rest.file("index.html")
-
-    on
-
 })
 
 rest.offerFile('index.js')
