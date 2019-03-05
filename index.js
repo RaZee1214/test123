@@ -1,11 +1,7 @@
 $(function(){
     $("h1").click(function(){
-        $("body").fadeOut(500)
+        $("body").fadeOut(500000)
     })
-})
-
-$(function(){
-    $("").click("#s = color.yellow")
 })
 
 function changecolor()  {
@@ -16,6 +12,18 @@ function takeover(){
     $(".b").text("hehe darkness")
 }
 
+$(document).ready(function(){
+    $(".button4").mouseover(function(){
+        $(this).fadeOut()    
+    });    
+});
+
+$(document).ready(function(){
+    $(".button4").mouseout(function(){
+        $(this).fadeIn()    
+    });    
+});
+
 function postPeople(){
-    
+
 }
