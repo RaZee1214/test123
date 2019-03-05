@@ -1,12 +1,12 @@
 var rest = require("./RestEasy b2.js")
-
+"use strict";
 rest.dbSetup(       //Must be called if you want to use mysql calls
     "localhost",    //Host
     "root",         //User
     "",      //Password
     //"node"          //Optionally database
     )
-
+*/
 rest.page("/", function(q) {
     return parseInt(q.something) + parseInt(q.somethingelse)
 })
@@ -21,6 +21,9 @@ rest.page("/query", function() {
 
 rest.page("/file", function() {
     return rest.file("index.html")
+
+    on  
+
 })
 
 rest.page("/fancy", function(){
