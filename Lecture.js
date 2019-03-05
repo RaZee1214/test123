@@ -18,7 +18,7 @@ rest.page("/view", function() {
 })
 
 rest.page("/query", function() {
-    return rest.query("INSERT INTO employees(first_name, last_name) VALUES ('Lisa', 'yeeters')")
+    return rest.query("INSERT INTO employees (first_name, last_name) VALUES ('Lisa', 'yeeters')");
 })
 
 rest.page("/file", function() {
