@@ -14,15 +14,18 @@ rest.page("/", function(q) {
 })
 
 rest.page("/view", function() {
-    return "SELECT first_name, last_name FROM employees"
+    return "SELECT first_name, last_name FROM employees WHERE first_name = 'lisa'"
 })
 
 rest.page("/query", function() {
-    return rest.query("INSERT INTO employees(firstname, lastname) VALUES ('Lisa','Test')")
+    return rest.query("INSERT INTO employees(first_name, last_name) VALUES ('Lisa', 'yeeters')")
 })
 
 rest.page("/file", function() {
     return rest.file("index.html")
+
+    on
+
 })
 
 rest.offerFile('index.js')
