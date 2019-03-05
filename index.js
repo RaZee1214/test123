@@ -9,5 +9,13 @@ $(function(){
 })
 
 function changecolor()  {
+    $(".seppi").addClass("yellow");
+}
+
+function takeover(){
+    $(".b").text("hehe darkness")
+}
+
+function postPeople(){
     
 }
