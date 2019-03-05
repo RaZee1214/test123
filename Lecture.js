@@ -1,12 +1,12 @@
 var rest = require("./RestEasy b2.js")
-/*
+
 rest.dbSetup(       //Must be called if you want to use mysql calls
     "localhost",    //Host
     "node",         //User
     "node.js",      //Password
-    "node"          //Optionally database
+    //"node"          //Optionally database
     )
-*/
+
 rest.page("/", function(q) {
     return parseInt(q.something) + parseInt(q.somethingelse)
 })
@@ -28,5 +28,7 @@ rest.page("/fancy", function(){
 })
 
 rest.offerFile('index.js')
+
+rest.offerFile('style.css')
 
 rest.start(8002)
