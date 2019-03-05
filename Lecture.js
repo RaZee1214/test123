@@ -18,8 +18,22 @@ rest.page("/view", function() {
 })
 
 rest.page("/query", function() {
-    return rest.query("INSERT INTO employees(first_name, last_name) VALUES ('Lisa', 'yeeters')")
+    return rest.query("CALL add_emp();")
+    /* DROP PROCEDURE IF EXISTS add_emp;
+
+DELIMITER // 
+CREATE PROCEDURE add_emp()
+BEGIN 
+	set @pre_emp_id = (SELECT emp_no FROM employees ORDER BY emp_no DESC LIMIT 1);
+    set @new_emp_id = (@pre_emp_id +1);
+	INSERT INTO employees(emp_no, first_name, last_name) VALUES (@new_emp_id, 'Lisa', 'Yeeters');
+END // 
+DELIMITER ; */
+
+/* SELECT * FROM `employees` ORDER  BY emp_no DESC; */
+
 })
+
 
 rest.page("/file", function() {
     return rest.file("index.html")
