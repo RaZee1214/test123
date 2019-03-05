@@ -6,7 +6,6 @@ rest.dbSetup(       //Must be called if you want to use mysql calls
     "",      //Password
     //"node"          //Optionally database
     )
-*/
 rest.page("/", function(q) {
     return parseInt(q.something) + parseInt(q.somethingelse)
 })
